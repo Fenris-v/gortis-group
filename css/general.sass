@@ -45,13 +45,29 @@ p
 
   &_bordered
     border: 1px solid rgba(221, 221, 221, 0.2)
+    background: transparent
     line-height: 75px
     padding: 0 70px
 
     &:hover
-      border: 1px solid rgba(221, 221, 221, 1)
+      border: 1px solid $blue
+      background: $blue
 
 .no_list
   padding: 0
   margin: 0
   list-style: none
+
+.blur
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  opacity: 0
+  +transition
+  background: $darkBlue
+  position: absolute
+  z-index: 2
+
+  &:hover
+    +transition
