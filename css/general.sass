@@ -1,0 +1,57 @@
+*
+  +box
+
+body
+  max-width: 100%
+  overflow-x: hidden
+  display: flex
+  flex-direction: column
+  @include font()
+  margin: 0
+
+  .wrapper
+    max-width: 1330px
+    padding: 0 15px
+    margin: 0 auto
+
+    &_fullHD
+      max-width: 1920px
+      margin: 0 auto
+      position: relative
+      padding: 0 15px
+
+p
+  margin: 0
+
+.btn
+  display: inline-flex
+  padding: 0 40px
+  @include font($white, $regular, 400, 13px, 55px)
+  letter-spacing: 0.12em
+  white-space: nowrap
+  text-decoration: none
+  +transition
+  text-transform: uppercase
+  border: none
+
+  &:hover
+    +transition
+
+  &_blue
+    background: $blue
+
+    &:hover
+      opacity: 0.8
+
+  &_bordered
+    border: 1px solid rgba(221, 221, 221, 0.2)
+    line-height: 75px
+    padding: 0 70px
+
+    &:hover
+      border: 1px solid rgba(221, 221, 221, 1)
+
+.no_list
+  padding: 0
+  margin: 0
+  list-style: none

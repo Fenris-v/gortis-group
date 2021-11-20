@@ -1,0 +1,15 @@
+.footer
+  +space
+  padding-bottom: 70px
+
+  p, a
+    @include font(rgba(0, 0, 0, 0.6), $regular, 400, 20px, 1.2)
+    max-width: 48%
+
+  a
+    text-decoration: none
+    +transition
+
+    &:hover
+      color: $textBlack
+      +transition
